@@ -1215,6 +1215,27 @@ a {
     max-width: 12.5%;
   }
 }
+.cid-szLjTFAKq8 {
+  padding-top: 1rem;
+  padding-bottom: 0rem;
+  background-color: #e7f8ff;
+}
+.cid-szLjTFAKq8 img {
+  width: 120px;
+  margin: auto;
+}
+.cid-szLjTFAKq8 .card {
+  transition: all 0.3s;
+  height: fit-content;
+  padding: 1rem 0;
+  opacity: 0.7;
+  margin-bottom: 1rem;
+}
+@media (min-width: 992px) {
+  .cid-szLjTFAKq8 .card {
+    max-width: 12.5%;
+  }
+}
 .cid-su1fWiVHgL {
   padding-top: 2rem;
   padding-bottom: 2rem;
