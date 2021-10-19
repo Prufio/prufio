@@ -64,7 +64,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 83,
+    "uniqCompNum": 85,
     "versionPublish": "5.3.10",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/pruf-favicon-128x128.png",
@@ -951,7 +951,7 @@
             }
           },
           "_name": "image4",
-          "_customHTML": "<section class=\"image4\" group=\"Image & Video\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"12\" step=\"1\" value=\"12\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Description\" name=\"showText\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/disclaimer-bg-2000x1333.jpg\" selected>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#002a40\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">                \n                <h4 class=\"mbr-section-title mbr-fonts-style align-center\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                    <b>Title</b>\n                </h4>\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/roadmap-001-2048x4000.png\" alt=\"Mobirise\">\n                    <p class=\"mbr-description mbr-fonts-style mt-3 align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-description\">\n                        Image Description</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"image4\" group=\"Image & Video\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"12\" step=\"1\" value=\"12\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Description\" name=\"showText\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/disclaimer-bg-2000x1333.jpg\" selected>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#002a40\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">                \n                <h4 class=\"mbr-section-title mbr-fonts-style align-center\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                    <b>Title</b>\n                </h4>\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/roadmap-001-2048x4000.png\" alt=\"Mobirise\">\n                    <p class=\"mbr-description mbr-fonts-style mt-3 align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-description\">\n                        Image Description</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "sHYkF1uwLG",
           "_anchor": "image4-22",
           "_protectedParams": [],
@@ -960,37 +960,112 @@
           "_params": {}
         },
         {
-          "alias": false,
+          "_name": "clients02",
+          "_sourceTheme": "mobirise5",
           "_styles": {
             "padding-top": "(@paddingTop * 1rem)",
             "padding-bottom": "(@paddingBottom * 1rem)",
             "background-color": "@bgColor",
             "img": {
-              "width": "120px",
+              "max-width": "140px",
               "margin": "auto"
             },
             ".card": {
+              "background": "white",
+              "padding": "2rem 0",
               "transition": "all 0.3s",
-              "height": "fit-content",
-              "padding": "1rem 0",
-              "opacity": "0.7",
-              "margin-bottom": "1rem"
+              "&:hover": {
+                "transform": "scale(0.9)"
+              },
+              "cursor": "pointer"
             },
-            "@media (min-width: 992px)": {
-              ".card": {
-                "max-width": "12.5%"
-              }
+            ".mbr-text": {
+              "max-width": "700px",
+              "color": "#1a449a"
+            },
+            ".mbr-section-title": {
+              "color": "#353535",
+              "text-align": "center"
+            },
+            ".svg-top": {
+              "width": "100%",
+              "position": "absolute",
+              "left": "0",
+              "top": "-48px",
+              "height": "50px",
+              "transform-origin": "bottom",
+              "animation": "1.5s ease-in-out infinite alternate svg-wave",
+              ".st0": {
+                "fill": "@bgColor"
+              },
+              "@media (max-width: 992px)": {
+                "width": "1000px"
+              },
+              "fill": "@primaryColor"
             }
           },
-          "_name": "clients1",
-          "_sourceTheme": "mobirise5",
-          "_customHTML": "<section class=\"clients1\" group=\"Clients\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"range\" inline title=\"Items\" name=\"items\" min=\"1\" max=\"8\" value=\"8\" step=\"1\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#c8deea\">\n    </mbr-parameters>\n    <div class=\"images-container\" mbr-class=\"{'container-fluid':fullWidth, container:fullWidth==false}\">\n        <div class=\"mbr-section-head\">\n            <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                <b>PRüF's Partners:</b></h3>\n            <h4 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\" data-app-selector=\".mbr-section-subtitle\">For a better look, use pictures of the same size in this block.\n                elit</h4>\n            <p class=\"mbr-text mbr-fonts-style align-center mt-2\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                Click on an image in this block to replace it. Set the number of logos in Block Parameters. </p>\n        </div>\n        <div class=\"row justify-content-center mt-4\">\n            <div class=\"col-md-3 card\">\n                <a href=\"https://iohk.io\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/iohk-240x85.png\" alt></a>\n            </div>\n            <div class=\"col-md-3 card\" mbr-if=\"items > 1\">\n                <a href=\"http://x10.agency\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/x10-240x85.png\" alt></a>\n            </div>\n            <div class=\"col-md-3 card\" mbr-if=\"items > 2\">\n                <a href=\"http://arweave.org\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/arweave240x85-240x85.png\" alt></a>\n            </div>\n            <div class=\"col-md-3 card\" mbr-if=\"items > 3\">\n                <a href=\"https://ipfs.io\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/ipfs-280x99.png\" alt></a>\n            </div>\n            <div class=\"col-md-3 card\" mbr-if=\"items > 4\">\n                <a href=\"http://whitewhale.capital\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/wwcapital240x85-240x85.png\" alt></a>\n            </div>\n            <div class=\"col-md-3 card\" mbr-if=\"items > 5\">\n                <a href=\"https://unstoppabledomains.com/\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/unstoppable-domains-240x85.png\" alt></a>\n            </div>\n            <div class=\"col-md-3 card\" mbr-if=\"items > 6\">\n                <a href=\"https://p2pb2b.io\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/p2pb2b-1-280x99.png\" alt></a>\n            </div>\n            <div class=\"col-md-3 card\" mbr-if=\"items > 7\">\n                <a href=\"https://www.creative-tim.com\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/creativetim-280x99.png\" alt></a>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "sMkpEpSAu3",
+          "_customHTML": "<section class=\"clients1\" group=\"Clients\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"range\" inline title=\"Items\" name=\"items\" min=\"1\" max=\"6\" value=\"4\" step=\"1\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#c8deea\">\n    </mbr-parameters>\n    <svg class=\"svg-top\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 1600 40\" style=\"enable-background:new 0 0 1600 40;\" preserveAspectRatio=\"none\">\n        <style type=\"text/css\">\n            .st0 {\n                fill: #1A449A;\n            }\n        </style>\n        <path class=\"st0\" d=\"M-1,15.7c200.1,0,200.7,13.8,400.9,13.8C600,29.5,600.4,9.3,800.5,9.3S998.8,36.8,1199,36.8\n\ts201.9-21.1,402-21.1v24.1L-1,40V15.7z\"></path>\n    </svg>\n    <div class=\"images-container\" mbr-class=\"{'container-fluid':fullWidth, container:fullWidth==false}\">\n        <div class=\"mbr-section-head pb-5\" mbr-if=\"showTitle || showSubTitle || showText\">\n            <h3 class=\"mbr-section-title mbr-fonts-style align-left mb-3\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                <b>PRüF's Partners:</b></h3>\n            <h4 class=\"mbr-section-subtitle mbr-fonts-style align-left mb-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\" data-app-selector=\".mbr-section-subtitle\">For a better look, use pictures of the\n                same size in this block.\n                elit</h4>\n            <p class=\"mbr-text mbr-fonts-style align-left mb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat congue\n                velit ac risus maximus blandit. </p>\n        </div>\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-3 col-lg-3\">\n                <div class=\"card md-pb\">\n                    <a href=\"https://iohk.io\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/iohk-240x85.png\" alt></a>\n                </div>\n            </div>\n            <div class=\"col-md-3 col-lg-3\" mbr-if=\"items > 1\">\n                <div class=\"card md-pb\">\n                    <a href=\"http://arweave.org\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/arweave240x85-240x85.png\" alt></a>\n                </div>\n            </div>\n            <div class=\"col-md-3 col-lg-3\" mbr-if=\"items > 2\">\n                <div class=\"card md-pb\">\n                    <a href=\"https://x10.agency\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/x10-240x85.png\" alt></a>\n                </div>\n            </div>\n            <div class=\"col-md-3 col-lg-3\" mbr-if=\"items > 3\">\n                <div class=\"card md-pb\">\n                    <a href=\"http://whitewhale.capital\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/wwcapital240x85-240x85.png\" alt></a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "clients02-2b",
+          "_isUserblock": true,
+          "_cid": "sMksOTiYWT",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "clients1-2a"
+          "_params": {}
+        },
+        {
+          "_name": "clients02",
+          "_sourceTheme": "mobirise5",
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            "img": {
+              "max-width": "140px",
+              "margin": "auto"
+            },
+            ".card": {
+              "background": "white",
+              "padding": "2rem 0",
+              "transition": "all 0.3s",
+              "&:hover": {
+                "transform": "scale(0.9)"
+              },
+              "cursor": "pointer"
+            },
+            ".mbr-text": {
+              "max-width": "700px",
+              "color": "#1a449a"
+            },
+            ".mbr-section-title": {
+              "color": "#353535",
+              "text-align": "center"
+            },
+            ".svg-top": {
+              "width": "100%",
+              "position": "absolute",
+              "left": "0",
+              "top": "-48px",
+              "height": "50px",
+              "transform-origin": "bottom",
+              "animation": "1.5s ease-in-out infinite alternate svg-wave",
+              ".st0": {
+                "fill": "@bgColor"
+              },
+              "@media (max-width: 992px)": {
+                "width": "1000px"
+              },
+              "fill": "@primaryColor"
+            }
+          },
+          "_customHTML": "<section class=\"clients1\" group=\"Clients\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"range\" inline title=\"Items\" name=\"items\" min=\"1\" max=\"6\" value=\"4\" step=\"1\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#c8deea\">\n    </mbr-parameters>\n    <svg class=\"svg-top\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 1600 40\" style=\"enable-background:new 0 0 1600 40;\" preserveAspectRatio=\"none\">\n        <style type=\"text/css\">\n            .st0 {\n                fill: #1A449A;\n            }\n        </style>\n        <path class=\"st0\" d=\"M-1,15.7c200.1,0,200.7,13.8,400.9,13.8C600,29.5,600.4,9.3,800.5,9.3S998.8,36.8,1199,36.8\n\ts201.9-21.1,402-21.1v24.1L-1,40V15.7z\"></path>\n    </svg>\n    <div class=\"images-container\" mbr-class=\"{'container-fluid':fullWidth, container:fullWidth==false}\">\n        <div class=\"mbr-section-head pb-5\" mbr-if=\"showTitle || showSubTitle || showText\">\n            <h3 class=\"mbr-section-title mbr-fonts-style align-left mb-3\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                <b>Our Clients</b>\n            </h3>\n            <h4 class=\"mbr-section-subtitle mbr-fonts-style align-left mb-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\" data-app-selector=\".mbr-section-subtitle\">For a better look, use pictures of the\n                same size in this block.\n                elit</h4>\n            <p class=\"mbr-text mbr-fonts-style align-left mb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat congue\n                velit ac risus maximus blandit. </p>\n        </div>\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-3 col-lg-3\">\n                <div class=\"card md-pb\">\n                    <a href=\"https://ipfs.io\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/ipfs-280x99.png\" alt></a>\n                </div>\n            </div>\n            <div class=\"col-md-3 col-lg-3\" mbr-if=\"items > 1\">\n                <div class=\"card md-pb\">\n                    <a href=\"https://p2pb2b.io\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/p2pb2b-1-280x99.png\" alt></a>\n                </div>\n            </div>\n            <div class=\"col-md-3 col-lg-3\" mbr-if=\"items > 2\">\n                <div class=\"card md-pb\">\n                    <a href=\"https://unstoppabledomains.com/\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/unstoppable-domains-240x85.png\" alt></a>\n                </div>\n            </div>\n            <div class=\"col-md-3 col-lg-3\" mbr-if=\"items > 3\">\n                <div class=\"card md-pb\">\n                    <a href=\"https://www.creative-tim.com\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/creativetim-280x99.png\" alt></a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "clients02-2c",
+          "_isUserblock": true,
+          "_cid": "sMksPDkllC",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
         },
         {
           "alias": false,

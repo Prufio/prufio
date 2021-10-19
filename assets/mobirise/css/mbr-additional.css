@@ -1375,7 +1375,7 @@ a {
 }
 .cid-sHYkF1uwLG {
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
   background-image: url("../../../assets/images/disclaimer-bg-2000x1333.jpg");
 }
 @media (max-width: 991px) {
@@ -1394,25 +1394,92 @@ a {
   margin: 0;
   padding-bottom: 100px;
 }
-.cid-sMkpEpSAu3 {
-  padding-top: 1rem;
-  padding-bottom: 0rem;
+.cid-sMksOTiYWT {
+  padding-top: 0rem;
+  padding-bottom: 3rem;
   background-color: #c8deea;
 }
-.cid-sMkpEpSAu3 img {
-  width: 120px;
+.cid-sMksOTiYWT img {
+  max-width: 140px;
   margin: auto;
 }
-.cid-sMkpEpSAu3 .card {
+.cid-sMksOTiYWT .card {
+  background: white;
+  padding: 2rem 0;
   transition: all 0.3s;
-  height: fit-content;
-  padding: 1rem 0;
-  opacity: 0.7;
-  margin-bottom: 1rem;
+  cursor: pointer;
 }
-@media (min-width: 992px) {
-  .cid-sMkpEpSAu3 .card {
-    max-width: 12.5%;
+.cid-sMksOTiYWT .card:hover {
+  transform: scale(0.9);
+}
+.cid-sMksOTiYWT .mbr-text {
+  max-width: 700px;
+  color: #1a449a;
+}
+.cid-sMksOTiYWT .mbr-section-title {
+  color: #353535;
+  text-align: center;
+}
+.cid-sMksOTiYWT .svg-top {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: -48px;
+  height: 50px;
+  transform-origin: bottom;
+  animation: 1.5s ease-in-out infinite alternate svg-wave;
+  fill: #81afca;
+}
+.cid-sMksOTiYWT .svg-top .st0 {
+  fill: #c8deea;
+}
+@media (max-width: 992px) {
+  .cid-sMksOTiYWT .svg-top {
+    width: 1000px;
+  }
+}
+.cid-sMksPDkllC {
+  padding-top: 0rem;
+  padding-bottom: 3rem;
+  background-color: #c8deea;
+}
+.cid-sMksPDkllC img {
+  max-width: 140px;
+  margin: auto;
+}
+.cid-sMksPDkllC .card {
+  background: white;
+  padding: 2rem 0;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.cid-sMksPDkllC .card:hover {
+  transform: scale(0.9);
+}
+.cid-sMksPDkllC .mbr-text {
+  max-width: 700px;
+  color: #1a449a;
+}
+.cid-sMksPDkllC .mbr-section-title {
+  color: #353535;
+  text-align: center;
+}
+.cid-sMksPDkllC .svg-top {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: -48px;
+  height: 50px;
+  transform-origin: bottom;
+  animation: 1.5s ease-in-out infinite alternate svg-wave;
+  fill: #81afca;
+}
+.cid-sMksPDkllC .svg-top .st0 {
+  fill: #c8deea;
+}
+@media (max-width: 992px) {
+  .cid-sMksPDkllC .svg-top {
+    width: 1000px;
   }
 }
 .cid-su1gr9jP6M {
