@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "prufio 3.0",
-    "currentPage": "info.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -4159,11 +4159,11 @@
             }
           },
           "_cid": "sSgu8kae9k",
+          "_anchor": "extTeams14-36",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "extTeams14-36"
+          "_params": {}
         },
         {
           "_name": "team02",
@@ -4282,11 +4282,11 @@
             }
           },
           "_cid": "sSgue1cwYT",
+          "_anchor": "team02-37",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "team02-37"
+          "_params": {}
         },
         {
           "_name": "team02",
@@ -4405,11 +4405,11 @@
             }
           },
           "_cid": "sSguevg9VC",
+          "_anchor": "team02-38",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "team02-38"
+          "_params": {}
         },
         {
           "alias": false,
