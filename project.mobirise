@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "prufio 3.0",
-    "currentPage": "info.html",
+    "currentPage": "imagehost.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -64,7 +64,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 118,
+    "uniqCompNum": 121,
     "versionPublish": "5.3.10",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/pruf-favicon-128x128.png",
@@ -1307,7 +1307,7 @@
     "imagehost.html": {
       "settings": {
         "title": "Image Host",
-        "order": 8,
+        "order": 9,
         "meta_descr": "You shouldn't be here!"
       },
       "components": [
@@ -1751,13 +1751,49 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "@media (max-width: 991px)": {
+              ".image-wrapper": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".row": {
+              "flex-direction": "row-reverse"
+            },
+            "img": {
+              "width": "100%"
+            }
+          },
+          "_name": "image3",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section class=\"image3\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"12\" step=\"1\" value=\"8\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/prufcircle-1200x1200.png\" alt>\n                    <p class=\"mbr-description mbr-fonts-style mt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-description\">\n                        Image Description</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image3-3c",
+          "_isUserblock": true,
+          "_cid": "sYbYlyb3i6",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
         }
       ]
     },
     "disclaimer.html": {
       "settings": {
         "title": "Disclaimer",
-        "order": 6,
+        "order": 7,
         "meta_descr": "External host disclaimer."
       },
       "components": [
@@ -2202,7 +2238,7 @@
     "info.html": {
       "settings": {
         "title": "Overview",
-        "order": 1,
+        "order": 2,
         "meta_descr": "All about PRüF."
       },
       "components": [
@@ -2932,7 +2968,7 @@
     "devs.html": {
       "settings": {
         "title": "Developers",
-        "order": 4,
+        "order": 5,
         "meta_descr": "Information for developers looking to work with the PRüF protocol or platform."
       },
       "components": [
@@ -3646,7 +3682,7 @@
     "team.html": {
       "settings": {
         "title": "Team",
-        "order": 2,
+        "order": 3,
         "meta_descr": "Meet the PRüF team!"
       },
       "components": [
@@ -4559,7 +4595,7 @@
     "events.html": {
       "settings": {
         "title": "Events",
-        "order": 3,
+        "order": 4,
         "meta_descr": "PRüF's upcoming events and announcements."
       },
       "components": [
@@ -5129,7 +5165,7 @@
     "contact.html": {
       "settings": {
         "title": "Contact",
-        "order": 7
+        "order": 8
       },
       "components": [
         {
@@ -5749,7 +5785,7 @@
     "faq.html": {
       "settings": {
         "title": "FAQ",
-        "order": 5,
+        "order": 6,
         "meta_descr": "Information for developers looking to work with the PRüF protocol or platform."
       },
       "components": [

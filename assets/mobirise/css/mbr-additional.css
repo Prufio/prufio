@@ -2029,6 +2029,22 @@ a {
 .cid-su1QCafnTH img {
   width: 100%;
 }
+.cid-sYbYlyb3i6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+@media (max-width: 991px) {
+  .cid-sYbYlyb3i6 .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-sYbYlyb3i6 .row {
+  flex-direction: row-reverse;
+}
+.cid-sYbYlyb3i6 img {
+  width: 100%;
+}
 .cid-su1fXW3Zfy {
   z-index: 1000;
   width: 100%;
